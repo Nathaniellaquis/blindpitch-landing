@@ -7,12 +7,12 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-neutral-200 z-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
-          <div className="text-2xl font-serif italic">BlindPitch</div>
+          <a href="/" className="text-2xl font-serif italic">BlindPitch</a>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm hover:underline hidden md:inline">
+            <a href="/writers" className="text-sm hover:underline hidden md:inline">
               For writers
             </a>
-            <a href="#" className="text-sm hover:underline hidden md:inline">
+            <a href="/publications" className="text-sm hover:underline hidden md:inline">
               For publications
             </a>
             <Button variant="ghost" className="text-sm">
@@ -46,15 +46,19 @@ export default function Home() {
                 words against the world.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button
-                  size="lg"
-                  className="bg-neutral-900 hover:bg-neutral-800 h-12 px-8"
-                >
-                  Start pitching
-                </Button>
-                <Button size="lg" variant="outline" className="h-12 px-8">
-                  Learn more
-                </Button>
+                <a href="/browse">
+                  <Button
+                    size="lg"
+                    className="bg-neutral-900 hover:bg-neutral-800 h-12 px-8"
+                  >
+                    Start pitching
+                  </Button>
+                </a>
+                <a href="/how-it-works">
+                  <Button size="lg" variant="outline" className="h-12 px-8">
+                    Learn more
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -425,17 +429,17 @@ export default function Home() {
               </div>
               <ul className="space-y-3 text-sm">
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/how-it-works" className="text-neutral-700 hover:underline">
                     How it works
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/browse" className="text-neutral-700 hover:underline">
                     Browse jobs
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/writers" className="text-neutral-700 hover:underline">
                     Success stories
                   </a>
                 </li>
@@ -447,17 +451,17 @@ export default function Home() {
               </div>
               <ul className="space-y-3 text-sm">
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/publications" className="text-neutral-700 hover:underline">
                     Post opportunities
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/publications" className="text-neutral-700 hover:underline">
                     Find writers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-neutral-700 hover:underline">
+                  <a href="/publications" className="text-neutral-700 hover:underline">
                     Pricing
                   </a>
                 </li>
